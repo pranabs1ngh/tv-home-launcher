@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- JioHotstar-style sparkle with its blue-purple-pink gradient, drawn for TV Home. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M12,0.5 L13.5,10.5 L23.5,12 L13.5,13.5 L12,23.5 L10.5,13.5 L0.5,12 L10.5,10.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="2" android:startY="2" android:endX="22" android:endY="22"
+                android:startColor="#FF1F8BFF" android:centerColor="#FF8B3DFF" android:endColor="#FFFF3D8B" />
+        </aapt:attr>
+    </path>
+    <group android:pivotX="12" android:pivotY="12" android:rotation="45" android:scaleX="0.5" android:scaleY="0.5">
+        <path android:fillColor="#FFFFFFFF"
+            android:pathData="M12,0.5 L13.5,10.5 L23.5,12 L13.5,13.5 L12,23.5 L10.5,13.5 L0.5,12 L10.5,10.5 Z" />
+    </group>
+</vector>

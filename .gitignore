@@ -1,0 +1,4 @@
+.toolchain/
+build/
+*.keystore
+.DS_Store

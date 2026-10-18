@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Frosted-glass tint drawn over the blurred wallpaper: a light veil and soft top glow. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="26dp" />
+            <solid android:color="#B30A0B0F" />
+        </shape>
+    </item>
+    <item android:bottom="400dp">
+        <shape>
+            <corners android:topLeftRadius="26dp" android:topRightRadius="26dp" />
+            <gradient android:angle="270" android:startColor="#08FFFFFF" android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
