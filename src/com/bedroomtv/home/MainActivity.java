@@ -37,9 +37,9 @@ import static com.bedroomtv.home.Ui.dp;
 
 public class MainActivity extends Activity {
 
-    /** HDMI 1 on this Haier/MediaTek set; found by label if the id ever changes. */
-    private static final String PS5_INPUT_ID = "com.mediatek.tvinput/.hdmi.HDMIInputService/HW5";
-    private static final String PS5_INPUT_LABEL = "HDMI 1";
+    /** HDMI 2 on this Haier/MediaTek set; found by label if the id ever changes. */
+    private static final String PS5_INPUT_ID = "com.mediatek.tvinput/.hdmi.HDMIInputService/HW6";
+    private static final String PS5_INPUT_LABEL = "HDMI 2";
 
     private static final int TILE_W_DP = 57;
     private static final int TILE_H_DP = 57;
@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
         buildAppsRow();
         appsRow.getChildAt(0).requestFocus();
 
-        // Selecting Games slides the rows up a little so the game tile and its name sit clear of the edge.
+        // Selecting Inputs slides the rows up a little so the game tile and its name sit clear of the edge.
         // The block is clipped just below the clock, so whatever slides past that edge is hidden.
         View rowsBlock = findViewById(R.id.rows_block);
         rowsBlock.getViewTreeObserver().addOnGlobalFocusChangeListener((oldFocus, newFocus) -> {
@@ -286,7 +286,7 @@ public class MainActivity extends Activity {
     private void openPs5() {
         String inputId = findPs5Input();
         if (inputId == null) {
-            Toast.makeText(this, "HDMI 1 not found", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, PS5_INPUT_LABEL + " not found", Toast.LENGTH_SHORT).show();
             return;
         }
         Ui.start(this, new Intent(Intent.ACTION_VIEW, TvContract.buildChannelUriForPassthroughInput(inputId)));
